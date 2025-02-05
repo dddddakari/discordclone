@@ -1,23 +1,23 @@
 // forgot to do just my part not everything created!.
 
-import React from 'react';
-import { View, Image, StyleSheet, Text, TouchableOpacity, Alert} from 'react-native';
-
-// Dakari's Part: The Background and Logo!
 
 export default function App() {
 
+  return (
     <View style={styles.container}>
       <Image
         style={styles.iconMain}
         source={require('./assets/discordguy.png')}
       />
     </View>
-};
+  );
+}
 
 const styles = StyleSheet.create({
   container: {
-    fleX: 1,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: 'blue',
   },
   iconMain: {
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
     height: 100,
     marginTop: '40%' ,
   },
-)};
+});
